@@ -14,7 +14,8 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         externalNativeBuild {
             cmake {
-                arguments "-DMODULE_NAME:STRING=$moduleLibraryName"
+    arguments "-DMODULE_NAME:STRING=$moduleLibraryName", "-DANDROID_ABI=x86_64"
+}
             }
         }
     }
